@@ -44,7 +44,6 @@ public extension UIView {
 
     }
     
-    
     func startAnimation() {
         setShapeLayer()
         self.layer.masksToBounds = true

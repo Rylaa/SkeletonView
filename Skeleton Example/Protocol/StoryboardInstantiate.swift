@@ -6,6 +6,9 @@
 //
 
 import UIKit
+enum StoryboardType: String {
+    case startFlow = "Main"
+}
 
 protocol StoryboardInstantiate {
     static var storyboardType: StoryboardType { get }
