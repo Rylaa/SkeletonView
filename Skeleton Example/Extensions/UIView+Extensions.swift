@@ -6,7 +6,10 @@
 //
 
 import UIKit
+
+
 public typealias SkeletonLayerAnimation = (CALayer) -> CAAnimation
+
 public extension UIView {
     
     class func getAllSubviews<T: UIView>(from parenView: UIView) -> [T] {
@@ -34,10 +37,6 @@ public extension UIView {
     func get<T: UIView>(all type: T.Type) -> [T] { return UIView.getAllSubviews(from: self) as [T] }
     func get(all types: [UIView.Type]) -> [UIView] { return UIView.getAllSubviews(from: self, types: types) }
     
-}
-
-public extension UIView {
-    
     func startSkeleton() {
         let allViews = UIView.getAllSubviews(from: self)
         let initialliazeSkeleton = SekeletonView(views: allViews)
@@ -53,10 +52,10 @@ public extension UIView {
         gradient.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
         let mainColor = #colorLiteral(red: 0.8901960784, green: 0.8901960784, blue: 0.8901960784, alpha: 1)
         gradient.colors = [mainColor.cgColor,
-                           mainColor.brightened(by: 0.93).cgColor,
+                           mainColor.highlightColor(by: 0.93).cgColor,
                            mainColor.cgColor]
         self.layer.addSublayer(gradient)
-        gradient.transition(to: .leftRight)
+        gradient.transition(direction: .leftRight)
         
     }
     
@@ -76,14 +75,5 @@ public extension UIView {
         view.stopSkeleton()
         
     }
-
-}
-
-
-extension UIColor {
-  func brightened(by factor: CGFloat) -> UIColor {
-    var h: CGFloat = 0, s: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
-    getHue(&h, saturation: &s, brightness: &b, alpha: &a)
-    return UIColor(hue: h, saturation: s, brightness: b * factor, alpha: a)
-  }
+    
 }

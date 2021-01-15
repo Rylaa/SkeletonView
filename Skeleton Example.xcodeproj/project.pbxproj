@@ -18,6 +18,7 @@
 		531CB67D25B1A56C00AC9C27 /* GradientPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CB67C25B1A56C00AC9C27 /* GradientPoints.swift */; };
 		531CB68125B1BFBA00AC9C27 /* UIView+CABasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CB68025B1BFB900AC9C27 /* UIView+CABasicAnimation.swift */; };
 		531CB68425B1C36100AC9C27 /* CAGradientLayer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CB68325B1C36100AC9C27 /* CAGradientLayer+Extensions.swift */; };
+		531CB6DC25B22A4E00AC9C27 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CB6DB25B22A4E00AC9C27 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		531CB67C25B1A56C00AC9C27 /* GradientPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientPoints.swift; sourceTree = "<group>"; };
 		531CB68025B1BFB900AC9C27 /* UIView+CABasicAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CABasicAnimation.swift"; sourceTree = "<group>"; };
 		531CB68325B1C36100AC9C27 /* CAGradientLayer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Extensions.swift"; sourceTree = "<group>"; };
+		531CB6DB25B22A4E00AC9C27 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				531CB67C25B1A56C00AC9C27 /* GradientPoints.swift */,
 				531CB68025B1BFB900AC9C27 /* UIView+CABasicAnimation.swift */,
 				531CB68325B1C36100AC9C27 /* CAGradientLayer+Extensions.swift */,
+				531CB6DB25B22A4E00AC9C27 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				531CB66B25B195B900AC9C27 /* UIView+Extensions.swift in Sources */,
 				531CB68125B1BFBA00AC9C27 /* UIView+CABasicAnimation.swift in Sources */,
 				531CB64525B09C5B00AC9C27 /* StoryboardInstantiate.swift in Sources */,
+				531CB6DC25B22A4E00AC9C27 /* UIColor+Extension.swift in Sources */,
 				531CB5F325B099DF00AC9C27 /* ViewController.swift in Sources */,
 				531CB64D25B17C2E00AC9C27 /* SekeletonView.swift in Sources */,
 				531CB5EF25B099DF00AC9C27 /* AppDelegate.swift in Sources */,

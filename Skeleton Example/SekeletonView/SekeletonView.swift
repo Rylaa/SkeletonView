@@ -24,18 +24,13 @@ extension SekeletonView {
             val.startAnimation()
             
         })
-        
-//        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5)) {
-//            self.stopSkeleton()
-//        }
     }
-    
     
     func stopSkeleton() {
         views.forEach { val in
             val.layer.sublayers?.forEach { layer in
                 if let gradientLayer = layer as? CAGradientLayer {
-                    gradientLayer.stopSliding()
+                    gradientLayer.stopTransition()
                     gradientLayer.removeFromSuperlayer()
                 }
                 
@@ -46,7 +41,5 @@ extension SekeletonView {
             }
         }
     }
-    
-    
 }
 

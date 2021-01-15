@@ -11,13 +11,13 @@ public extension CAGradientLayer {
     
     private static let layerKey = "Skeleton.Animation"
     
-    func transition(to dir: GradientDirection, group: ((CAAnimationGroup) -> Void) = { _ in }) {
+    func transition(direction: GradientDirection, setGroupAnimation: ((CAAnimationGroup) -> Void) = { _ in }) {
         
         let startPointAnim = CABasicAnimation(keyPath: #keyPath(startPoint))
-        startPointAnim.apply(gradientTransition: dir.startPoint)
+        startPointAnim.apply(gradientTransition: direction.startPoint)
         
         let endPointAnim = CABasicAnimation(keyPath: #keyPath(endPoint))
-        endPointAnim.apply(gradientTransition: dir.endPoint)
+        endPointAnim.apply(gradientTransition: direction.endPoint)
         
         let animGroup = CAAnimationGroup()
         animGroup.animations = [startPointAnim, endPointAnim]
@@ -25,12 +25,12 @@ public extension CAGradientLayer {
         animGroup.timingFunction = CAMediaTimingFunction(name: .easeIn)
         animGroup.repeatCount = .infinity
         
-        group(animGroup)
+        setGroupAnimation(animGroup)
         add(animGroup, forKey: CAGradientLayer.layerKey)
     }
     
     
-    func stopSliding() {
+    func stopTransition() {
         removeAnimation(forKey: CAGradientLayer.layerKey)
     }
 }
