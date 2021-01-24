@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class SekeletonView {
+final class SkeletonView {
     
     var views: [UIView]
     
@@ -16,7 +16,7 @@ final class SekeletonView {
     }
 }
 
-extension SekeletonView {
+extension SkeletonView {
     
     func inittializeSkeleton() {
         views.removeAll(where: { $0.classForCoder.class().description() == "UIView" })
@@ -37,6 +37,11 @@ extension SekeletonView {
                 if let shapeLayer = layer as? CAShapeLayer {
                     shapeLayer.removeFromSuperlayer()
                     
+                }
+            }
+            if let btn = val as? UIButton {
+                if btn.layer.borderColor != nil && btn.currentImage == nil {
+                    btn.layer.borderWidth = 0.5
                 }
             }
         }

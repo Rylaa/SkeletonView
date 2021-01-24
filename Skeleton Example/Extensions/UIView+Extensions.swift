@@ -39,7 +39,7 @@ public extension UIView {
     
     func startSkeleton() {
         let allViews = UIView.getAllSubviews(from: self)
-        let initialliazeSkeleton = SekeletonView(views: allViews)
+        let initialliazeSkeleton = SkeletonView(views: allViews)
         initialliazeSkeleton.inittializeSkeleton()
 
     }
@@ -73,7 +73,7 @@ public extension UIView {
     
     func stopSkeleton() {
         let allViews = UIView.getAllSubviews(from: self)
-        let view = SekeletonView(views: allViews)
+        let view = SkeletonView(views: allViews)
         view.stopSkeleton()
         
     }
