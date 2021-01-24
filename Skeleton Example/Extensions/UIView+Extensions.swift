@@ -65,7 +65,10 @@ public extension UIView {
         layer.fillColor = UIColor.lightGray.withAlphaComponent(0.5).cgColor
         layer.path = path.cgPath
         self.layer.addSublayer(layer)
-    
+        if let btn = self as? UIButton {
+            btn.layer.insertSublayer(layer, above: btn.titleLabel?.layer)
+            btn.layer.borderWidth = -1
+        }
     }
     
     func stopSkeleton() {
