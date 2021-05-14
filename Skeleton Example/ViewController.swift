@@ -9,16 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var viewHeader: UIView!
+    @IBOutlet weak var headers: UIView!
+    @IBOutlet weak var btn: UIButton!
     @IBOutlet weak var containerView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        containerView.startSkeleton()
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(10)) {
-            self.containerView.stopSkeleton()
-        }
+        btn.isDisableSkeleton = true
+        view.startSkeleton()
+      
+        
     }
 }
 

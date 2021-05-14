@@ -13,12 +13,14 @@
 		531CB5F825B099E100AC9C27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 531CB5F725B099E100AC9C27 /* Assets.xcassets */; };
 		531CB5FB25B099E100AC9C27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531CB5F925B099E100AC9C27 /* LaunchScreen.storyboard */; };
 		531CB64525B09C5B00AC9C27 /* StoryboardInstantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CB64425B09C5B00AC9C27 /* StoryboardInstantiate.swift */; };
-		531CB64D25B17C2E00AC9C27 /* SkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CB64C25B17C2E00AC9C27 /* SkeletonView.swift */; };
+		531CB64D25B17C2E00AC9C27 /* SekeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CB64C25B17C2E00AC9C27 /* SekeletonView.swift */; };
 		531CB66B25B195B900AC9C27 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CB66A25B195B900AC9C27 /* UIView+Extensions.swift */; };
 		531CB67D25B1A56C00AC9C27 /* GradientPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CB67C25B1A56C00AC9C27 /* GradientPoints.swift */; };
 		531CB68125B1BFBA00AC9C27 /* UIView+CABasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CB68025B1BFB900AC9C27 /* UIView+CABasicAnimation.swift */; };
 		531CB68425B1C36100AC9C27 /* CAGradientLayer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CB68325B1C36100AC9C27 /* CAGradientLayer+Extensions.swift */; };
-		531CB6DC25B22A4E00AC9C27 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CB6DB25B22A4E00AC9C27 /* UIColor+Extension.swift */; };
+		534B4EAC264EBA4C0058F009 /* AssociatedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534B4EAB264EBA4C0058F009 /* AssociatedObjects.swift */; };
+		538E3F1325B9744800230883 /* TransactionDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538E3F1125B9744800230883 /* TransactionDetailHeaderView.xib */; };
+		538E3F1425B9744800230883 /* TransactionDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538E3F1225B9744800230883 /* TransactionDetailHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +32,14 @@
 		531CB5FA25B099E100AC9C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		531CB5FC25B099E100AC9C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		531CB64425B09C5B00AC9C27 /* StoryboardInstantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiate.swift; sourceTree = "<group>"; };
-		531CB64C25B17C2E00AC9C27 /* SkeletonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonView.swift; sourceTree = "<group>"; };
+		531CB64C25B17C2E00AC9C27 /* SekeletonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SekeletonView.swift; sourceTree = "<group>"; };
 		531CB66A25B195B900AC9C27 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		531CB67C25B1A56C00AC9C27 /* GradientPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientPoints.swift; sourceTree = "<group>"; };
 		531CB68025B1BFB900AC9C27 /* UIView+CABasicAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CABasicAnimation.swift"; sourceTree = "<group>"; };
 		531CB68325B1C36100AC9C27 /* CAGradientLayer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Extensions.swift"; sourceTree = "<group>"; };
-		531CB6DB25B22A4E00AC9C27 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		534B4EAB264EBA4C0058F009 /* AssociatedObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedObjects.swift; sourceTree = "<group>"; };
+		538E3F1125B9744800230883 /* TransactionDetailHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionDetailHeaderView.xib; sourceTree = "<group>"; };
+		538E3F1225B9744800230883 /* TransactionDetailHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionDetailHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +96,7 @@
 		531CB64825B0B55200AC9C27 /* SekeletonView */ = {
 			isa = PBXGroup;
 			children = (
-				531CB64C25B17C2E00AC9C27 /* SkeletonView.swift */,
+				531CB64C25B17C2E00AC9C27 /* SekeletonView.swift */,
 			);
 			path = SekeletonView;
 			sourceTree = "<group>";
@@ -100,11 +104,13 @@
 		531CB66925B195AE00AC9C27 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				538E3F1225B9744800230883 /* TransactionDetailHeaderView.swift */,
+				538E3F1125B9744800230883 /* TransactionDetailHeaderView.xib */,
 				531CB66A25B195B900AC9C27 /* UIView+Extensions.swift */,
 				531CB67C25B1A56C00AC9C27 /* GradientPoints.swift */,
 				531CB68025B1BFB900AC9C27 /* UIView+CABasicAnimation.swift */,
 				531CB68325B1C36100AC9C27 /* CAGradientLayer+Extensions.swift */,
-				531CB6DB25B22A4E00AC9C27 /* UIColor+Extension.swift */,
+				534B4EAB264EBA4C0058F009 /* AssociatedObjects.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -167,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				531CB5FB25B099E100AC9C27 /* LaunchScreen.storyboard in Resources */,
+				538E3F1325B9744800230883 /* TransactionDetailHeaderView.xib in Resources */,
 				531CB5F825B099E100AC9C27 /* Assets.xcassets in Resources */,
 				531CB5F625B099DF00AC9C27 /* Main.storyboard in Resources */,
 			);
@@ -182,9 +189,10 @@
 				531CB66B25B195B900AC9C27 /* UIView+Extensions.swift in Sources */,
 				531CB68125B1BFBA00AC9C27 /* UIView+CABasicAnimation.swift in Sources */,
 				531CB64525B09C5B00AC9C27 /* StoryboardInstantiate.swift in Sources */,
-				531CB6DC25B22A4E00AC9C27 /* UIColor+Extension.swift in Sources */,
+				538E3F1425B9744800230883 /* TransactionDetailHeaderView.swift in Sources */,
 				531CB5F325B099DF00AC9C27 /* ViewController.swift in Sources */,
-				531CB64D25B17C2E00AC9C27 /* SkeletonView.swift in Sources */,
+				531CB64D25B17C2E00AC9C27 /* SekeletonView.swift in Sources */,
+				534B4EAC264EBA4C0058F009 /* AssociatedObjects.swift in Sources */,
 				531CB5EF25B099DF00AC9C27 /* AppDelegate.swift in Sources */,
 				531CB68425B1C36100AC9C27 /* CAGradientLayer+Extensions.swift in Sources */,
 				531CB67D25B1A56C00AC9C27 /* GradientPoints.swift in Sources */,

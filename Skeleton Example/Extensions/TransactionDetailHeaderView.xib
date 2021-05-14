@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Archivo-Italic.ttf">
+            <string>Archivo-Italic</string>
+        </array>
+        <array key="Archivo-Regular.ttf">
+            <string>Archivo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransactionDetailHeaderView" customModule="Skeleton_Example" customModuleProvider="target">
+            <connections>
+                <outlet property="btn" destination="Le0-p2-IR2" id="UAE-UM-XAQ"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="yDd-hK-W2X"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="111"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="SKi-w5-SlN">
+                    <rect key="frame" x="0.0" y="0.0" width="326" height="102"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fxi-5O-Urq">
+                            <rect key="frame" x="0.0" y="0.0" width="326" height="15"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9D-1w-cko">
+                                    <rect key="frame" x="0.0" y="0.0" width="159" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="15" id="GDy-QI-02P"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="14"/>
+                                    <color key="textColor" red="0.63137254899999995" green="0.63137254899999995" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wB7-9y-EK0">
+                                    <rect key="frame" x="167" y="0.0" width="159" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="15" id="B1g-Tc-hIp"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="14"/>
+                                    <color key="textColor" red="0.63137254899999995" green="0.63137254899999995" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="XvT-Sh-YGW"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="MYF-vQ-33M">
+                            <rect key="frame" x="0.0" y="31" width="326" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8K-ub-3IQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="326" height="30"/>
+                                    <state key="normal" title="Button"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="YLF-Os-k16"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bku-yl-Bq4">
+                            <rect key="frame" x="0.0" y="77" width="326" height="25"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jzP-86-JbF">
+                                    <rect key="frame" x="0.0" y="0.0" width="182" height="25"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Le0-p2-IR2">
+                                            <rect key="frame" x="0.0" y="1" width="85" height="23"/>
+                                            <color key="backgroundColor" red="0.56078431370000004" green="0.3411764706" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="85" id="6F0-3H-g8r"/>
+                                                <constraint firstAttribute="height" constant="23" id="JVs-ka-XbJ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="12"/>
+                                            <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <inset key="imageEdgeInsets" minX="55" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SY3-7w-bZa">
+                                            <rect key="frame" x="97" y="1" width="85" height="23"/>
+                                            <color key="backgroundColor" red="0.56078431370000004" green="0.3411764706" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="85" id="J7n-CZ-3NA"/>
+                                                <constraint firstAttribute="height" constant="23" id="hKb-GX-IyV"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="12"/>
+                                            <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <inset key="imageEdgeInsets" minX="55" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="SY3-7w-bZa" firstAttribute="centerY" secondItem="jzP-86-JbF" secondAttribute="centerY" id="0KE-Mq-SVV"/>
+                                        <constraint firstItem="Le0-p2-IR2" firstAttribute="leading" secondItem="jzP-86-JbF" secondAttribute="leading" id="EBI-J4-YsK"/>
+                                        <constraint firstItem="Le0-p2-IR2" firstAttribute="centerY" secondItem="jzP-86-JbF" secondAttribute="centerY" id="cYh-fG-bK5"/>
+                                        <constraint firstAttribute="trailing" secondItem="SY3-7w-bZa" secondAttribute="trailing" id="e9S-gj-zDc"/>
+                                        <constraint firstAttribute="width" constant="182" id="jBU-Lz-0ju"/>
+                                        <constraint firstAttribute="height" constant="25" id="wRZ-xB-j1M"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Yhf-ug-67S">
+                                    <rect key="frame" x="182" y="0.0" width="144" height="25"/>
+                                    <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="20"/>
+                                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="cvd-MF-IZl"/>
+                            </constraints>
+                        </stackView>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zi1-WK-YUg">
+                            <rect key="frame" x="0.0" y="102" width="326" height="0.0"/>
+                            <subviews>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/255" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPd-At-6mr">
+                                    <rect key="frame" x="282" y="-24.5" width="36" height="16.5"/>
+                                    <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="14"/>
+                                    <color key="textColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add your note…" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UDA-zv-gVr">
+                                    <rect key="frame" x="0.0" y="0.0" width="326" height="0.0"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="130" maxY="0.0"/>
+                                    <color key="textColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" id="57U-Px-oU3"/>
+                                <constraint firstAttribute="bottom" secondItem="UDA-zv-gVr" secondAttribute="bottom" id="OWB-k4-Cfa"/>
+                                <constraint firstAttribute="trailing" secondItem="bPd-At-6mr" secondAttribute="trailing" constant="8" id="Q7V-9s-vjj"/>
+                                <constraint firstAttribute="trailing" secondItem="UDA-zv-gVr" secondAttribute="trailing" id="XZI-oV-gj1"/>
+                                <constraint firstAttribute="bottom" secondItem="bPd-At-6mr" secondAttribute="bottom" constant="8" id="cwk-Al-73z"/>
+                                <constraint firstItem="UDA-zv-gVr" firstAttribute="leading" secondItem="Zi1-WK-YUg" secondAttribute="leading" id="dsg-9R-HSw"/>
+                                <constraint firstItem="UDA-zv-gVr" firstAttribute="top" secondItem="Zi1-WK-YUg" secondAttribute="top" id="jeb-B3-aZr"/>
+                            </constraints>
+                        </view>
+                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Rb0-0A-AyT">
+                            <rect key="frame" x="0.0" y="102" width="326" height="25"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="automation" translatesAutoresizingMaskIntoConstraints="NO" id="jqj-at-4yA">
+                                    <rect key="frame" x="0.0" y="0.0" width="22" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="22" id="9RN-Bf-1hH"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule Applied" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="fyG-bG-k8Y">
+                                    <rect key="frame" x="30" y="0.0" width="296" height="25"/>
+                                    <fontDescription key="fontDescription" name="Archivo-Italic" family="Archivo" pointSize="14"/>
+                                    <color key="textColor" red="0.63137254899999995" green="0.63137254899999995" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="Akb-Hc-eVs"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="SKi-w5-SlN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="29L-S7-VtI"/>
+                <constraint firstItem="SKi-w5-SlN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HSw-RH-9iX"/>
+                <constraint firstAttribute="height" secondItem="SKi-w5-SlN" secondAttribute="height" multiplier="1.08824" id="IkB-lt-eH3"/>
+                <constraint firstAttribute="trailing" secondItem="SKi-w5-SlN" secondAttribute="trailing" id="Lum-v4-XfF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="4.3478260869565224" y="3.683035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="automation" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
